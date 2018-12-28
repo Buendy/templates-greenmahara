@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', Arial;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbarempty{
+    flex: 60%;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    background-color: white;
+}
+
+.btns{
+    text-decoration: none;
+    color: #47b0d1;
+    margin-left: 5px;
+    border: 1px solid #47b0d1;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btns:hover{
+    animation-name: enlaceempty;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enlaceempty {
+    from{background-color: #dbdbdb;color: #47b0d1;}
+    to{background-color: #47b0d1; color: white}
+}
+
+
+
+.navbarheader{
+    flex:40%;
+    padding: 10px;
+    text-align: right;
+    border-bottom: 1px solid #cccccc;
+    background-color: white;
+}
+
+.navbarheader a{
+    text-decoration: none;
+    color:#4d4d4d;
+    margin-left: 5px;
+}
+
+
+.navbarheader a:hover{
+    animation-name: enlacesnavbar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enlacesnavbar {
+    from{border-bottom: 2px solid white;}
+    to{border-bottom: 2px solid #4d4d4d;}
+}
+
+.left{
+    flex: 10%;
+
+}
+
+.center{
+    flex: 90%;
+    padding: 30px;
+    padding-left: 60px;
+    color: #4d4d4d;
+
+}
+
+.divleft{
+    flex: 100%;
+    background-color: #cccccc;
+    padding: 20px;
+    display: block;
+    border-bottom: 1px solid #8e8e8e;
+    border-right: 1px solid #8e8e8e;
+    border-radius: 0px 0px 5px 0px;
+
+}
+
+.hidde{
+    display: none;
+}
+.visible{
+    visibility: visible;
+}
+
+
+.divleft a{
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer{
+    border-top: 1px solid #cccccc;
+    flex: 100%;
+    text-align: center;
+    color: #4d4d4d;
+}
+
+.posttitles{
+
+    margin-top: 70px;
+
+}
+
+.posttitles h3{
+    padding: 10px;
+    background: linear-gradient(to top, #e5e5e5, white);
+    border-bottom: 2px solid #4d4d4d;
+    width: 80%;
+}
+.posttitles p{
+    width: 80%;
+}
+.posttitles div{
+    border-top: 1px solid #4d4d4d;
+    width: 80%;
+}
+
+
+.posttitles a{
+    float: right;
+}
+
+.somemargin{
+    margin-top: 50px;
+}
+
+
+.errorPage{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+
+
+}
+
+.errorPage h1{
+    font-size: 150px;
+}
+.errorPage h1{
+    font-size: 80px;
+}
+
+
+
+
