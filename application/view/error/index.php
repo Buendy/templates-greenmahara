@@ -14,7 +14,7 @@
     <!-- CSS -->
     <link href="<?php echo URL; ?>css/styles.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: #357c56;">
 <div class="errorPage">
     <h1>404</h1>
     <h3>This is the Error-page. Will be shown when a page (= controller / method) does not exist.</h3>

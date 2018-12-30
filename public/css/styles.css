@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nunito|Fjalla+One|Exo+2');
 * {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Montserrat', Arial;
+    font-family: 'Exo 2', Arial;
     margin: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
 }
 
 .float-left{
@@ -19,149 +15,178 @@ body {
     float: right;
 }
 
+.aligncenter{
+    text-align: center;
+}
 
 .content{
     display: flex;
     flex-wrap: wrap;
 }
 
-.navbarempty{
-    flex: 60%;
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    flex: 100%;
     padding: 10px;
-    border-bottom: 1px solid #cccccc;
-    background-color: white;
+    box-shadow: 5px 0px  10px #333;
+    color: #efefef;
 }
 
-.btns{
+.navbar a{
     text-decoration: none;
-    color: #47b0d1;
-    margin-left: 5px;
-    border: 1px solid #47b0d1;
+    padding: 10px 20px;
+    color: #efefef;
+}
+
+.navbar a:hover{
+    animation-name: botones;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes botones {
+    from{color: #efefef;}
+    to{background-color: #efefef; color: #333;}
+}
+
+#login{
+    border: 2px solid #3d9164;
+    color: #3d9164;
     padding: 5px;
     border-radius: 5px;
 }
-
-.btns:hover{
-    animation-name: enlaceempty;
-    animation-duration: 0.5s;
+#login:hover{
+    animation-name: botonlogin;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
 
-@keyframes enlaceempty {
-    from{background-color: #dbdbdb;color: #47b0d1;}
-    to{background-color: #47b0d1; color: white}
+@keyframes botonlogin {
+    from{color: #3d9164;}
+    to{background-color: #3d9164; color: #efefef;}
 }
 
 
-
-.navbarheader{
-    flex:40%;
-    padding: 10px;
-    text-align: right;
-    border-bottom: 1px solid #cccccc;
-    background-color: white;
+.header-left{
+    flex: 80%;
+    background-color: #357c56;
+    padding: 60px;
 }
 
-.navbarheader a{
-    text-decoration: none;
-    color:#4d4d4d;
-    margin-left: 5px;
+.header-right{
+    flex:20%;
+    background-color: #3d9164;
+    padding: 60px;
+
 }
-
-
-.navbarheader a:hover{
-    animation-name: enlacesnavbar;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+.center, .center2, .left, .left2, .right, .right2{
+    color: #333;
 }
-
-@keyframes enlacesnavbar {
-    from{border-bottom: 2px solid white;}
-    to{border-bottom: 2px solid #4d4d4d;}
-}
-
 .left{
-    flex: 10%;
+    flex:10%;
+    background-color: #4c4c4c;
+    padding: 15px;
 
+}
+
+.left a{
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to top, #3f51b5,#6679e2);
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #efefef;
+    width: 120px;
+}
+
+.left a:hover{
+
+    animation-name: botonadmin;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes botonadmin {
+    from{width: 120px;}
+    to{width: 130px;}
 }
 
 .center{
-    flex: 90%;
+    flex: 70%;
+    background-color: #41996a;
     padding: 30px;
-    padding-left: 60px;
-    color: #4d4d4d;
-
 }
 
-.divleft{
-    flex: 100%;
-    background-color: #cccccc;
-    padding: 20px;
-    display: block;
-    border-bottom: 1px solid #8e8e8e;
-    border-right: 1px solid #8e8e8e;
-    border-radius: 0px 0px 5px 0px;
-
-}
-
-.hidde{
-    display: none;
-}
-.visible{
-    visibility: visible;
+.right{
+    flex:20%;
+    background-color: #4c4c4c;
+    padding: 30px;
 }
 
 
-.divleft a{
+.leftcenter{
+    flex: 15%;
+    background-color: #357c56;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.rightcenter{
+    flex:80%;
+    background-color: #4fc185;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.btncenter{
+    flex: 5%;
+
+}
+
+
+.btncenter a{
     text-decoration: none;
-    display: block;
-    margin-bottom: 10px;
+    background-color: #2a6345;
+    color: #333;
+    padding: 15px 10px;
+
+}
+
+.btncenter a:hover{
+    animation-name: botonblog;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes botonblog {
+    from{color: #333;}
+    to{background-color: #1f4c34; color: #efefef;}
+}
+
+.blog{
+    margin-bottom: 50px;
 }
 
 .footer{
-    border-top: 1px solid #cccccc;
     flex: 100%;
-    text-align: center;
-    color: #4d4d4d;
+    background-color: #357c56;
+    color: #333;
 }
-
-.posttitles{
-
-    margin-top: 70px;
-
-}
-
-.posttitles h3{
-    padding: 10px;
-    background: linear-gradient(to top, #e5e5e5, white);
-    border-bottom: 2px solid #4d4d4d;
-    width: 80%;
-}
-.posttitles p{
-    width: 80%;
-}
-.posttitles div{
-    border-top: 1px solid #4d4d4d;
-    width: 80%;
-}
-
-
-.posttitles a{
-    float: right;
-}
-
-.somemargin{
-    margin-top: 50px;
-}
-
 
 .errorPage{
+    background-color: #357c56;
+    color: #333;
     position: absolute;
     top: 40%;
     left: 40%;
-
-
 }
+
 
 .errorPage h1{
     font-size: 150px;
@@ -169,7 +194,3 @@ body {
 .errorPage h1{
     font-size: 80px;
 }
-
-
-
-

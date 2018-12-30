@@ -1,11 +1,11 @@
 <?php ?>
 <div class="left">
-    <div class="divleft content hidde" id="divleft">
-        <p>Posts</p>
-        <a href="" class="btns">Ver posts</a>
-        <a href="" class="btns">Crear post</a>
-        <p>Categorías</p>
-        <a href="" class="btns">Ver categorías</a>
-        <a href="" class="btns">Crear categorías</a>
-    </div>
+    <p>Zona Blog</p>
+    <a href="<?php echo URL; ?>home/eje">Crear post</a>
+    <a href="">Ver post</a>
+    <p>Zona Usuarios</p>
+    <a href="">Ver usuarios</a>
+    <a href="">Ver usuarios</a>
+
+
 </div>
